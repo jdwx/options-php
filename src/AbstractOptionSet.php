@@ -49,8 +49,9 @@ readonly abstract class AbstractOptionSet implements OptionSetInterface {
     }
 
 
-    public function add( OptionableInterface|array|OptionInterface|null $i_list ) : static {
-        return static::set( $this, $i_list );
+    /** @param OptionableInterface|list<OptionInterface>|OptionInterface|null $i_rOption */
+    public function add( OptionableInterface|array|OptionInterface|null $i_rOption ) : static {
+        return static::set( $this, $i_rOption );
     }
 
 
