@@ -8,6 +8,7 @@ return [
     'target_php_version' => '8.3',
 
     'directory_list' => [
+        'example/',
         'src/',
         'tests/',
         'vendor/',
